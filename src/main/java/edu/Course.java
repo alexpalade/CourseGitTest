@@ -9,7 +9,7 @@ public class Course {
     private final List<Student> students;
     private final Teacher teacher;
     
-    Course(String name, Teacher teacher) {
+    public Course(String name, Teacher teacher) {
         this.name = name;
         this.teacher = teacher;
         this.students = new ArrayList<>();

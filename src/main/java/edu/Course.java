@@ -41,6 +41,20 @@ public class Course {
     
     @Override
     public String toString() {
-        return "Not implemented yet.";
+        
+        StringBuilder result = new StringBuilder();
+        
+        result.append("------------------------------------------------------------------------\n");
+        result.append("This course is called \"" + this.name + "\" and is taught by \"" + this.teacher.getName() + "\".\n");
+        if (getStudentCount() == 0) {
+            result.append("It has no students.\n");
+        } else {
+            result.append("It has these " + getStudentCount() + " students:\n");
+            for (Student s : students) {
+                result.append("  - " + s.getName() + "\n");
+            }
+        }
+        
+        return result.toString();
     }
 }

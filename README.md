@@ -1,3 +1,3 @@
 # CourseGitTest
 
-Testing collaboration in Java with NetBeans.
+Testing collaboration in Java with NetBeans. It works!
